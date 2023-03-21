@@ -1,0 +1,22 @@
+pipeline:
+  name: remote_p1
+  identifier: remote_p1
+  projectIdentifier: proj1
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: s1
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  template:
+                    templateRef: temp
+                    versionLabel: ver
+        tags: {}
