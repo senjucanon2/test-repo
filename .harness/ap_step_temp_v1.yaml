@@ -4,7 +4,6 @@ template:
   projectIdentifier: proj1
   orgIdentifier: default
   spec:
-    type: HarnessApproval
     timeout: 1d
     spec:
       approvalMessage: |-
