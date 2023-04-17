@@ -7,7 +7,7 @@ pipeline:
   stages:
     - stage:
         name: dsf
-        identifier: dsfvsdfvdsv
+        identifier: dsfvsdfvdsv_asdsdaf
         description: ""
         type: CI
         spec:
