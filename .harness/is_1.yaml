@@ -1,0 +1,21 @@
+inputSet:
+  name: is_1
+  identifier: is_1
+  orgIdentifier: default
+  projectIdentifier: naidusanity
+  pipeline:
+    identifier: pipelineTest
+    stages:
+      - stage:
+          identifier: ds
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: dsvfsd
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        userGroups:
+                          - account._account_all_users
