@@ -1,0 +1,34 @@
+inputSet:
+  name: input_11
+  identifier: input_11
+  orgIdentifier: default
+  projectIdentifier: naidusanity
+  pipeline:
+    identifier: triggerTestPipelineChild
+    stages:
+      - stage:
+          identifier: dsfvsdfvdsv_as
+          type: CI
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: Run_1
+                    type: Run
+                    spec:
+                      connectorRef: naidupublicdocker
+                      image: us.gcr.io/playground/quickstart-image-test
+                      command: echo "hi"
+                    description: asdfs
+            infrastructure:
+              type: KubernetesDirect
+              spec:
+                connectorRef: dummy2
+                namespace: test
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: main
