@@ -1,0 +1,33 @@
+pipeline:
+  name: p4_remote
+  identifier: p4_remote
+  projectIdentifier: NGPipeAutoK8s5jaBNevyEG
+  orgIdentifier: Ng_Pipelines_K8s_Organisations
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: s1
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: ap1
+                  identifier: ap1
+                  type: HarnessApproval
+                  timeout: 1d
+                  spec:
+                    approvalMessage: |-
+                      Please review the following information
+                      and approve the pipeline progression
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                      userGroups:
+                        - account.NGPipeAutoSlackNotifyRCGyrQJrUE
+                    isAutoRejectEnabled: false
+                    approverInputs: []
+        tags: {}
