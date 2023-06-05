@@ -54,3 +54,26 @@ pipeline:
                     isAutoRejectEnabled: false
                     approverInputs: []
         tags: {}
+    - stage:
+        name: test 2
+        identifier: test_2
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  timeout: 10m
+                  spec:
+                    shell: Bash
+                    onDelegate: true
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo "MOHIT"
+                    environmentVariables: []
+                    outputVariables: []
+        tags: {}
