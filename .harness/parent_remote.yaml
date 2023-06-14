@@ -31,3 +31,27 @@ pipeline:
                     isAutoRejectEnabled: false
                     approverInputs: []
         tags: {}
+    - stage:
+        name: s2
+        identifier: s2
+        description: ""
+        type: Pipeline
+        spec:
+          org: default
+          pipeline: p1_inline
+          project: proj1
+          inputs:
+            identifier: p1_inline
+            stages:
+              - stage:
+                  identifier: s1
+                  type: Approval
+                  spec:
+                    execution:
+                      steps:
+                        - step:
+                            identifier: ap1
+                            type: HarnessApproval
+                            spec:
+                              approvers:
+                                userGroups: <+input>
