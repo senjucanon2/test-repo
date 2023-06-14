@@ -38,10 +38,10 @@ pipeline:
         type: Pipeline
         spec:
           org: default
-          pipeline: p2_remote
+          pipeline: p3_remote
           project: proj1
           inputs:
-            identifier: p2_remote
+            identifier: p3_remote
             stages:
               - stage:
                   identifier: s1
