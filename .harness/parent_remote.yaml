@@ -56,3 +56,28 @@ pipeline:
                               approvers:
                                 userGroups: <+input>
           outputs: []
+    - stage:
+        name: s3
+        identifier: s3
+        description: ""
+        type: Pipeline
+        spec:
+          org: default
+          pipeline: p2_remote
+          project: proj1
+          inputs:
+            identifier: p2_remote
+            stages:
+              - stage:
+                  identifier: s1
+                  type: Approval
+                  spec:
+                    execution:
+                      steps:
+                        - step:
+                            identifier: ap1
+                            type: HarnessApproval
+                            spec:
+                              approvers:
+                                userGroups: <+input>
+          outputs: []
