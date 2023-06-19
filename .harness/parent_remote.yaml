@@ -1,0 +1,17 @@
+pipeline:
+  name: parent_remote
+  identifier: parent_remote
+  projectIdentifier: proj1
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: s1
+        description: ""
+        type: Pipeline
+        spec:
+          org: default
+          pipeline: p1_remote
+          project: proj1
+          outputs: []
