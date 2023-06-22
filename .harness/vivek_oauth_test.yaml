@@ -1,0 +1,30 @@
+pipeline:
+  name: vivek_oauth_test
+  identifier: vivek_oauth_test
+  projectIdentifier: naidusanity
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: s1
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    onDelegate: true
+                    source:
+                      type: Inline
+                      spec:
+                        script: exit 0
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
