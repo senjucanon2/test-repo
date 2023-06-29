@@ -22,7 +22,7 @@ template:
                   and approve the pipeline progression
                 includePipelineExecutionHistory: true
                 approvers:
-                  minimumCount: 2
+                  minimumCount: 3
                   disallowPipelineExecutor: false
                   userGroups: <+input>
                 isAutoRejectEnabled: false
