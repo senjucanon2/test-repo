@@ -11,6 +11,7 @@ pipeline:
         template:
           templateRef: s1
           versionLabel: v1
+          gitBranch: b2
           templateInputs:
             type: Approval
             spec:
