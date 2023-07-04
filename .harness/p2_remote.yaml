@@ -1,7 +1,7 @@
 pipeline:
   name: p2_remote
   identifier: p2_remote
-  projectIdentifier: vivek
+  projectIdentifier: proj1
   orgIdentifier: default
   tags: {}
   stages:
