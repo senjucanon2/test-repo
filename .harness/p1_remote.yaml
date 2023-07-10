@@ -31,3 +31,18 @@ pipeline:
                     isAutoRejectEnabled: false
                     approverInputs: []
         tags: {}
+  notificationRules:
+    - name: notf
+      identifier: notf
+      pipelineEvents:
+        - type: StageFailed
+          forStages:
+            - AllStages
+        - type: PipelineFailed
+      notificationMethod:
+        type: Email
+        spec:
+          userGroups: []
+          recipients:
+            - vivek.dixit@harness.io
+      enabled: true
