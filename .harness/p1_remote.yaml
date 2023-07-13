@@ -8,7 +8,7 @@ pipeline:
     - stage:
         name: s1
         identifier: s1
-        description: edit_1
+        description: edit_2
         type: Approval
         spec:
           execution:
