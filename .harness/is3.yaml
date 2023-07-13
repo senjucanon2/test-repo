@@ -1,0 +1,20 @@
+inputSet:
+  name: is3
+  identifier: is3
+  orgIdentifier: default
+  projectIdentifier: proj1
+  pipeline:
+    identifier: p1_remote
+    stages:
+      - stage:
+          identifier: s1
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: ap1
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        minimumCount: 1
