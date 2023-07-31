@@ -30,10 +30,3 @@ pipeline:
                     isAutoRejectEnabled: false
                     approverInputs: []
         tags: {}
-    - stage:
-        name: s2
-        identifier: s2
-        template:
-          templateRef: s1
-          versionLabel: v1
-          gitBranch: b1
