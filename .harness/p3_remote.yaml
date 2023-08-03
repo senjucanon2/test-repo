@@ -1,6 +1,6 @@
 pipeline:
   name: p3_remote
-  identifier: p3_remote
+  identifier: p4_remote
   projectIdentifier: naidusanity
   orgIdentifier: default
   tags: {}
