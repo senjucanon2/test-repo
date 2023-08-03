@@ -1,6 +1,6 @@
 pipeline:
   name: p1_remote
-  identifier: p2_remote
+  identifier: p1_remote
   projectIdentifier: proj1
   orgIdentifier: default
   tags: {}
