@@ -3,7 +3,8 @@ pipeline:
   identifier: p1_remote
   projectIdentifier: proj1
   orgIdentifier: default
-  tags: {}
+  tags:
+    alation-ui: service-name
   stages:
     - stage:
         name: s1
