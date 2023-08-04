@@ -4,7 +4,7 @@ pipeline:
   projectIdentifier: proj1
   orgIdentifier: default
   tags:
-    alation-ui-service-name: ""
+    alation-ui: service-name
   stages:
     - stage:
         name: s1
