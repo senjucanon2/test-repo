@@ -5,7 +5,6 @@ pipeline:
   orgIdentifier: default
   tags:
     alation-ui: service-name
-    altion-ui: service-name2
   stages:
     - stage:
         name: s1
