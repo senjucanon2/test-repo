@@ -35,6 +35,7 @@ pipeline:
             description: ""
             required: false
             value: <+input>.default(pra).allowedValues(pra,sha,nt)
+        strategy: <+input>
   variables:
     - name: var1
       type: String
