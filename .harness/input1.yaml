@@ -1,5 +1,6 @@
 inputSet:
   name: input1
+  tags: {}
   identifier: input1
   orgIdentifier: default
   projectIdentifier: naidusanity
@@ -12,8 +13,12 @@ inputSet:
           variables:
             - name: stageVar1
               type: String
-              value: <+input>.default(pra).allowedValues(pra,sha,nt)
+              value: pra
     variables:
       - name: var1
         type: String
-        value: ""
+        value: abc
+  cacheResponse:
+    cacheState: VALID_CACHE
+    ttlLeft: 2591969837
+    lastUpdatedAt: 1692185152636
