@@ -28,3 +28,16 @@ pipeline:
                     outputVariables: []
                   timeout: 10m
         tags: {}
+        variables:
+          - name: stageVar1
+            type: String
+            default: pra
+            description: ""
+            required: false
+            value: <+input>.default(pra).allowedValues(pra,sha,nt)
+  variables:
+    - name: var1
+      type: String
+      description: ""
+      required: false
+      value: <+input>.allowedValues(abc,def,ghi)
