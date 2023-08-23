@@ -33,7 +33,7 @@ pipeline:
       type: String
       description: ""
       required: false
-      value: <+input>.default(stable).allowedValues(stable,unstable)
+      value: <+input>.default(stable)
     - name: var2
       type: String
       description: ""
