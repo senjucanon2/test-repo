@@ -1,0 +1,29 @@
+inputSet:
+  name: Jjenk
+  identifier: Jjenk
+  orgIdentifier: default
+  projectIdentifier: naidusanity
+  pipeline:
+    identifier: p1_remote_vivek
+    stages:
+      - stage:
+          identifier: s1
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: ShellScript_1
+                    type: ShellScript
+                    spec:
+                      source:
+                        type: Inline
+                        spec:
+                          script: <+input>
+    variables:
+      - name: var1
+        type: String
+        value: stable
+      - name: var2
+        type: String
+        value: <+input>
