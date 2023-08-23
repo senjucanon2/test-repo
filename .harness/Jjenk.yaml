@@ -20,7 +20,7 @@ inputSet:
                       source:
                         type: Inline
                         spec:
-                          script: echo "Hello"
+                          script: echo "Hello2"
     variables:
       - name: var1
         type: String
