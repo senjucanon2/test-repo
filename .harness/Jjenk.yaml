@@ -1,5 +1,6 @@
 inputSet:
   name: Jjenk
+  tags: {}
   identifier: Jjenk
   orgIdentifier: default
   projectIdentifier: naidusanity
