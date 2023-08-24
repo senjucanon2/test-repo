@@ -1,6 +1,7 @@
 inputSet:
   name: is1
-  tags: {}
+  tags:
+    tagx: ""
   identifier: is1
   orgIdentifier: default
   projectIdentifier: naidusanity
