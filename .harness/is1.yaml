@@ -17,5 +17,5 @@ inputSet:
         value: <+trigger.payload.var2>
   cacheResponse:
     cacheState: VALID_CACHE
-    ttlLeft: 86397289
-    lastUpdatedAt: 1692863366556
+    ttlLeft: 86385862
+    lastUpdatedAt: 1692863390077
