@@ -1,5 +1,8 @@
 inputSet:
   name: is1
+  tags:
+    tag1: ""
+    tag2: ""
   identifier: is1
   orgIdentifier: default
   projectIdentifier: naidusanity
