@@ -8,7 +8,7 @@ inputSet:
     variables:
       - name: var1
         type: String
-        value: stable
+        value: <+trigger.payload.var1>
       - name: var2
         type: String
         value: <+trigger.payload.var2>
