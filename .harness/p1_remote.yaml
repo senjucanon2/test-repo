@@ -31,3 +31,15 @@ pipeline:
                     isAutoRejectEnabled: false
                     approverInputs: []
         tags: {}
+  variables:
+    - name: var1
+      type: String
+      default: stable
+      description: ""
+      required: false
+      value: <+input>.allowedValues(stable,unstable)
+    - name: var2
+      type: String
+      description: ""
+      required: false
+      value: <+input>
