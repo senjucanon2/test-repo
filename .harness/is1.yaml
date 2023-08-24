@@ -1,0 +1,14 @@
+inputSet:
+  name: is1
+  identifier: is1
+  orgIdentifier: default
+  projectIdentifier: proj1
+  pipeline:
+    identifier: p1_remote
+    variables:
+      - name: var1
+        type: String
+        value: stable
+      - name: var2
+        type: String
+        value: <+trigger.payload.var2>
