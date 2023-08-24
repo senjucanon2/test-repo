@@ -11,4 +11,4 @@ inputSet:
     variables:
       - name: var1
         type: String
-        value: <+trigger.payload.var1>
+        value: stable
