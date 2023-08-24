@@ -1,0 +1,11 @@
+inputSet:
+  name: is1
+  identifier: is1
+  orgIdentifier: default
+  projectIdentifier: naidusanity
+  pipeline:
+    identifier: p1_remote
+    variables:
+      - name: var1
+        type: String
+        value: <+trigger.payload.var1>
