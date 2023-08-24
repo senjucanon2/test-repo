@@ -1,6 +1,8 @@
 inputSet:
   name: is1
-  tags: {}
+  tags:
+    tag1: ""
+    tag2: ""
   identifier: is1
   orgIdentifier: default
   projectIdentifier: proj1
@@ -15,5 +17,5 @@ inputSet:
         value: <+trigger.payload.var2>
   cacheResponse:
     cacheState: VALID_CACHE
-    ttlLeft: 86397148
-    lastUpdatedAt: 1692859626453
+    ttlLeft: 86397278
+    lastUpdatedAt: 1692859646529
