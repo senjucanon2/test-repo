@@ -8,15 +8,6 @@ pipeline:
     - stage:
         name: s1
         identifier: s1
-        description: ""
-        type: Custom
-        spec:
-          execution:
-            steps:
-              - step:
-                  name: ap1
-                  identifier: ap1
-                  template:
-                    templateRef: Approval_Stage
-                    versionLabel: v1
-        tags: {}
+        template:
+          templateRef: app_stage
+          versionLabel: v1
