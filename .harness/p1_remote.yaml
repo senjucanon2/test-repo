@@ -6,28 +6,8 @@ pipeline:
   tags: {}
   stages:
     - stage:
-        name: ap1
-        identifier: ap1
-        description: ""
-        type: Approval
-        spec:
-          execution:
-            steps:
-              - step:
-                  name: ap1
-                  identifier: ap1
-                  type: HarnessApproval
-                  timeout: 1d
-                  spec:
-                    approvalMessage: |-
-                      Please review the following information
-                      and approve the pipeline progression
-                    includePipelineExecutionHistory: true
-                    approvers:
-                      minimumCount: 1
-                      disallowPipelineExecutor: false
-                      userGroups:
-                        - account._account_all_users
-                    isAutoRejectEnabled: false
-                    approverInputs: []
-        tags: {}
+        name: s1
+        identifier: s1
+        template:
+          templateRef: Approval_Stage
+          versionLabel: v1
