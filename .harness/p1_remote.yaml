@@ -36,4 +36,4 @@ pipeline:
       type: String
       description: ""
       required: false
-      value: <+input>.default(123_).allowedValues(123_,321,123_321)
+      value: "123_321"
