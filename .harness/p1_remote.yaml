@@ -37,7 +37,15 @@ pipeline:
                     source:
                       type: Inline
                       spec:
-                        script: exit 0
+                        script: |-
+                          assert() {
+                           echo "$1"
+                           if [ "$1" !=  "$2" ]; then
+                             echo "Expression Assertion Failed: $1"
+                              exit 1
+                           fi
+                          }
+                          echo "<+json.select("a.b", "{\"a\" : {\"b\" : \"c\"}}")>" "c"
                     environmentVariables: []
                     outputVariables: []
                   timeout: 10m
