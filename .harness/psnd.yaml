@@ -1,0 +1,10 @@
+pipeline:
+  name: psnd
+  identifier: psnd
+  template:
+    templateRef: prashTemp
+    versionLabel: v1
+    gitBranch: main
+  tags: {}
+  projectIdentifier: naidusanity
+  orgIdentifier: default
