@@ -1,0 +1,9 @@
+pipeline:
+  name: pStEM
+  identifier: pStEM
+  template:
+    templateRef: prashTemp
+    versionLabel: v1
+  tags: {}
+  projectIdentifier: naidusanity
+  orgIdentifier: default
