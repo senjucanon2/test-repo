@@ -1,0 +1,27 @@
+template:
+  name: stage temp1sdfdf
+  identifier: stage_temp1sdfdf
+  versionLabel: "1"
+  type: Stage
+  projectIdentifier: naidusanity
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              name: vcvc
+              identifier: vcvc
+              template:
+                templateRef: StepAMittemp
+                versionLabel: "1"
+                gitBranch: patch-1
+                templateInputs:
+                  type: ShellScript
+                  spec:
+                    source:
+                      type: Inline
+                      spec:
+                        script: <+input>
