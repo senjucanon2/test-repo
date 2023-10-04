@@ -1,7 +1,12 @@
 environment:
   name: env1
   identifier: env1
-  accountId: kmpySmUISimoRrJL6NL73w
+  type: PreProduction
   orgIdentifier: default
   projectIdentifier: proj1
-  type: PreProduction
+  variables:
+    - name: var1
+      type: String
+      value: abc
+      description: ""
+      required: false
