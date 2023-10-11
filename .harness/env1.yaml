@@ -7,6 +7,6 @@ environment:
   variables:
     - name: var1
       type: String
-      value: abc
+      value: abcdef
       description: ""
       required: false
