@@ -1,0 +1,11 @@
+environment:
+  name: env1
+  identifier: env1
+  type: PreProduction
+  orgIdentifier: default
+  variables:
+    - name: var1
+      type: String
+      value: abc
+      description: ""
+      required: false
