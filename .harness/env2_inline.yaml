@@ -1,7 +1,12 @@
 environment:
   name: env2_inline
   identifier: env2_inline
-  accountId: kmpySmUISimoRrJL6NL73w
+  type: PreProduction
   orgIdentifier: default
   projectIdentifier: proj1
-  type: PreProduction
+  variables:
+    - name: var2
+      type: String
+      value: <+input>
+      description: ""
+      required: false
