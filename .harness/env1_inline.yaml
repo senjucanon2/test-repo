@@ -8,6 +8,6 @@ environment:
   variables:
     - name: var1
       type: String
-      value: abc
+      value: <+input>
       description: ""
       required: false
