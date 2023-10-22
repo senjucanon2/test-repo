@@ -1,7 +1,7 @@
 environment:
   name: env1_inline
   identifier: env1_inline
-  accountId: kmpySmUISimoRrJL6NL73w
+  tags: {}
+  type: PreProduction
   orgIdentifier: default
   projectIdentifier: proj1
-  type: PreProduction
