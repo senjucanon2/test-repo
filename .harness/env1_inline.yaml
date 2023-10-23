@@ -8,6 +8,6 @@ environment:
   variables:
     - name: env_var
       type: String
-      value: dummy
+      value: <+input>
       description: ""
       required: false
