@@ -5,3 +5,9 @@ environment:
   type: PreProduction
   orgIdentifier: default
   projectIdentifier: proj1
+  variables:
+    - name: env_var
+      type: String
+      value: dummy
+      description: ""
+      required: false
