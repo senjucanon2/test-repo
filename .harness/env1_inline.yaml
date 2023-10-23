@@ -5,9 +5,3 @@ environment:
   type: PreProduction
   orgIdentifier: default
   projectIdentifier: proj1
-  variables:
-    - name: var1
-      type: String
-      value: <+input>
-      description: ""
-      required: false
