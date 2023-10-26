@@ -1,0 +1,13 @@
+infrastructureDefinition:
+  name: infra1_remote
+  identifier: infra1_remote
+  orgIdentifier: default
+  projectIdentifier: proj1
+  environmentRef: env1_inline
+  deploymentType: Kubernetes
+  type: KubernetesDirect
+  spec:
+    connectorRef: k8s_con
+    namespace: n1
+    releaseName: release-<+INFRA_KEY_SHORT_ID>
+  allowSimultaneousDeployments: false
