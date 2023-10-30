@@ -3,3 +3,6 @@ service:
   identifier: srv1_remote
   orgIdentifier: default
   projectIdentifier: proj1
+  serviceDefinition:
+    spec: {}
+    type: Kubernetes
