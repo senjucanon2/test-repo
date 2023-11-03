@@ -1,8 +1,9 @@
 environment:
   name: env_remote_vivek
   identifier: env_remote_vivek
-  description: ""
+  description: " non-default branch"
   tags: {}
   type: PreProduction
   orgIdentifier: harness
   projectIdentifier: svcredesignhinger
+  storeType: REMOTE
