@@ -1,0 +1,8 @@
+environment:
+  name: env_remote_vivek
+  identifier: env_remote_vivek
+  description: ""
+  tags: {}
+  type: PreProduction
+  orgIdentifier: harness
+  projectIdentifier: svcredesignhinger
