@@ -23,10 +23,11 @@ pipeline:
                       primaryArtifactRef: <+input>
                       sources: <+input>
           environment:
-            environmentRef: account.env_remote_acc_vivek_def
+            environmentRef: account.env_remote_vivek__acc_non_def
+            gitBranch: b2
             deployToAll: false
             infrastructureDefinitions:
-              - identifier: infra_inline
+              - identifier: infra1
           execution:
             steps:
               - step:
