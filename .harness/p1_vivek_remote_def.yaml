@@ -23,7 +23,8 @@ pipeline:
                       primaryArtifactRef: <+input>
                       sources: <+input>
           environment:
-            environmentRef: org.env_remote_vivek_org_def
+            environmentRef: org.env_Remote_vivek_org_non_def
+            gitBranch: b2
             deployToAll: false
             infrastructureDefinitions:
               - identifier: infra1
