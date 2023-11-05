@@ -6,4 +6,3 @@ environment:
   type: PreProduction
   orgIdentifier: harness
   projectIdentifier: svcredesignhinger
-  storeType: REMOTE
