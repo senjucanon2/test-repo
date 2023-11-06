@@ -16,9 +16,10 @@ pipeline:
             serviceRef: srv1_remote
           environment:
             environmentRef: account.env_remote_acc
+            gitBranch: b1
             deployToAll: false
             infrastructureDefinitions:
-              - identifier: infra
+              - identifier: infra_b1
           execution:
             steps:
               - step:
