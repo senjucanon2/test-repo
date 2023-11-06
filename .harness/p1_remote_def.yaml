@@ -13,8 +13,7 @@ pipeline:
         spec:
           deploymentType: Kubernetes
           service:
-            serviceRef: <+input>
-            serviceInputs: <+input>
+            serviceRef: srv1_remote
           environment:
             environmentRef: inline_env_with_remote_infra
             deployToAll: false
