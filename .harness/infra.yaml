@@ -6,6 +6,6 @@ infrastructureDefinition:
   type: KubernetesDirect
   spec:
     connectorRef: account.k8s_acc
-    namespace: n1
+    namespace: n2
     releaseName: release-<+INFRA_KEY_SHORT_ID>
   allowSimultaneousDeployments: false
