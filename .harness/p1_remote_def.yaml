@@ -15,10 +15,10 @@ pipeline:
           service:
             serviceRef: srv1_remote
           environment:
-            environmentRef: inline_env_with_remote_infra
+            environmentRef: env_remote_repo2_def
             deployToAll: false
             infrastructureDefinitions:
-              - identifier: infra1_remote
+              - identifier: infra_def
           execution:
             steps:
               - step:
