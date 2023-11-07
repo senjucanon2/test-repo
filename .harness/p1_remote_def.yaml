@@ -15,7 +15,7 @@ pipeline:
           service:
             serviceRef: srv1_remote
           environment:
-            environmentRef: account.env_inline_acc_infra_inline
+            environmentRef: org.env_inline_org_inline_infra
             deployToAll: false
             infrastructureDefinitions:
               - identifier: infra1
