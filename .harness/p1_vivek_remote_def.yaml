@@ -48,6 +48,11 @@ pipeline:
                 infrastructureDefinitions:
                   - identifier: infra_inline
                   - identifier: infra_remote
+              - environmentRef: account.env_acc_remote_Qa
+                deployToAll: false
+                infrastructureDefinitions:
+                  - identifier: infra_remote
+                  - identifier: infra1_inlin_e
         tags: {}
         failureStrategies:
           - onFailure:
