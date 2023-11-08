@@ -1,0 +1,11 @@
+infrastructureDefinition:
+  name: infra_remote
+  identifier: infra_remote
+  environmentRef: env_acc_remote_Qa
+  deploymentType: Kubernetes
+  type: KubernetesDirect
+  spec:
+    connectorRef: account.tck8s
+    namespace: n2
+    releaseName: release-<+INFRA_KEY_SHORT_ID>
+  allowSimultaneousDeployments: false
