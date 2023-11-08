@@ -53,6 +53,14 @@ pipeline:
                 infrastructureDefinitions:
                   - identifier: infra_remote
                   - identifier: infra1_inlin_e
+              - environmentRef: org.env_1_inline
+                deployToAll: false
+                infrastructureDefinitions:
+                  - identifier: infra1
+              - environmentRef: org.env_2_inline
+                deployToAll: false
+                infrastructureDefinitions:
+                  - identifier: infra1
         tags: {}
         failureStrategies:
           - onFailure:
