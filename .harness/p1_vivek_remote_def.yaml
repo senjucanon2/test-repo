@@ -13,15 +13,7 @@ pipeline:
         spec:
           deploymentType: Kubernetes
           service:
-            serviceRef: nginx
-            serviceInputs:
-              serviceDefinition:
-                type: Kubernetes
-                spec:
-                  artifacts:
-                    primary:
-                      primaryArtifactRef: <+input>
-                      sources: <+input>
+            serviceRef: srv_vivek_Def
           execution:
             steps:
               - step:
