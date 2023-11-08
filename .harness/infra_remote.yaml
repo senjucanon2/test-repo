@@ -1,0 +1,13 @@
+infrastructureDefinition:
+  name: infra_remote
+  identifier: infra_remote
+  orgIdentifier: harness
+  projectIdentifier: svcredesignhinger
+  environmentRef: env_remote_vivek_qa
+  deploymentType: Kubernetes
+  type: KubernetesDirect
+  spec:
+    connectorRef: NewDeleConnector1
+    namespace: n1
+    releaseName: release-<+INFRA_KEY_SHORT_ID>
+  allowSimultaneousDeployments: false
