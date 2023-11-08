@@ -51,6 +51,10 @@ pipeline:
               - environmentRef: qa
                 deployToAll: true
                 infrastructureDefinitions: <+input>
+              - environmentRef: env_remote_vivek_qa
+                deployToAll: false
+                infrastructureDefinitions:
+                  - identifier: infra_inline
         tags: {}
         failureStrategies:
           - onFailure:
