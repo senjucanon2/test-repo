@@ -47,6 +47,7 @@ pipeline:
                 deployToAll: false
                 infrastructureDefinitions:
                   - identifier: infra_inline
+                  - identifier: infra_remote
         tags: {}
         failureStrategies:
           - onFailure:
