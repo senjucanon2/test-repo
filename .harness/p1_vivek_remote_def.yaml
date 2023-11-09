@@ -62,55 +62,9 @@ pipeline:
           services:
             values:
               - serviceRef: srv_vivek_Def
-              - serviceRef: artifact_test
-                serviceInputs:
-                  serviceDefinition:
-                    type: Kubernetes
-                    spec:
-                      artifacts:
-                        primary:
-                          type: Acr
-                          spec:
-                            tag: <+input>
-                        sidecars:
-                          - sidecar:
-                              identifier: sd1
-                              type: Gcr
-                              spec:
-                                tag: <+input>
-                          - sidecar:
-                              identifier: sd2
-                              type: Ecr
-                              spec:
-                                tag: <+input>
-                          - sidecar:
-                              identifier: sd3
-                              type: Nexus3Registry
-                              spec:
-                                tag: <+input>
-                          - sidecar:
-                              identifier: sd4
-                              type: ArtifactoryRegistry
-                              spec:
-                                tag: <+input>
-                          - sidecar:
-                              identifier: sd5
-                              type: CustomArtifact
-                              spec:
-                                version: <+input>
               - serviceRef: srv1_org
-              - serviceRef: account.accVik
-                serviceInputs:
-                  serviceDefinition:
-                    type: Kubernetes
-                    spec:
-                      variables:
-                        - name: accVar
-                          type: String
-                          value: <+input>
-                        - name: nreee
-                          type: String
-                          value: <+input>
+              - serviceRef: account.srv_Acc_vivek
+              - serviceRef: org.srv_org_vivek
             metadata:
               parallel: false
         tags: {}
