@@ -1,8 +1,0 @@
-service:
-  name: srv1_remote
-  identifier: srv1_remote
-  orgIdentifier: default
-  projectIdentifier: proj1
-  serviceDefinition:
-    spec: {}
-    type: Kubernetes

@@ -1,7 +1,0 @@
-environment:
-  name: env_remote_vivek_qa
-  identifier: env_remote_vivek_qa
-  accountId: px7xd_BFRCi-pfWPYXVjvw
-  orgIdentifier: harness
-  projectIdentifier: svcredesignhinger
-  type: PreProduction

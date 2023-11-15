@@ -1,7 +1,0 @@
-environment:
-  name: env_remote_def
-  identifier: env_remote_def
-  accountId: kmpySmUISimoRrJL6NL73w
-  orgIdentifier: default
-  projectIdentifier: proj1
-  type: PreProduction
