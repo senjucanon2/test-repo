@@ -3,7 +3,7 @@ pipeline:
   identifier: remote_pipeline_vivek
   projectIdentifier: naidusanity
   orgIdentifier: default
-  tags: {}
+  tags: {"key":"valuw"}
   stages:
     - stage:
         name: s1
