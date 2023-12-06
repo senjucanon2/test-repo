@@ -16,6 +16,6 @@ template:
       source:
         type: Inline
         spec:
-          script: dcsxdc
+          script: echo 'test'
       environmentVariables: []
       outputVariables: []
