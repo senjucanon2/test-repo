@@ -1,0 +1,27 @@
+template:
+  name: custom_stage_template
+  identifier: custom_stage_template
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: proj1
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              type: ShellScript
+              name: ShellScript_1
+              identifier: ShellScript_1
+              spec:
+                shell: Bash
+                onDelegate: true
+                source:
+                  type: Inline
+                  spec:
+                    script: exit 0
+                environmentVariables: []
+                outputVariables: []
+              timeout: 10m
