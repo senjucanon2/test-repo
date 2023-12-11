@@ -8,7 +8,7 @@ pipeline:
     - stage:
         name: s1
         identifier: s1
-        description: ""
+        description: update-1
         type: Custom
         spec:
           execution:
