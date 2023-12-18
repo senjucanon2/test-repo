@@ -29,7 +29,7 @@ pipeline:
                   timeout: 10m
         tags: {}
     - stage:
-        name: update 5
+        name: update 6
         identifier: update_2
         description: ""
         type: Approval
