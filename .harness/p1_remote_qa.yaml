@@ -1,7 +1,7 @@
 pipeline:
   name: p1_remote_qa
   identifier: p1_remote_qa
-  projectIdentifier: vivek
+  projectIdentifier: vivek_proj
   orgIdentifier: default
   tags: {}
   stages:
@@ -29,7 +29,7 @@ pipeline:
                   timeout: 10m
         tags: {}
     - stage:
-        name: update 4
+        name: update 5
         identifier: update_2
         description: ""
         type: Approval
