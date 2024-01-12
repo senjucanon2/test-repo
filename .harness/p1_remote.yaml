@@ -19,6 +19,13 @@ pipeline:
             deployToAll: false
             infrastructureDefinitions:
               - identifier: infra1
+            environmentInputs:
+              identifier: env1
+              type: PreProduction
+              variables:
+                - name: var1
+                  type: String
+                  value: <+input>
           execution:
             steps:
               - step:
