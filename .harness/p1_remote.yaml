@@ -8,26 +8,38 @@ pipeline:
     - stage:
         name: s1
         identifier: s1
-        description: update2
-        type: Approval
+        description: ""
+        type: Deployment
         spec:
+          deploymentType: Kubernetes
+          service:
+            serviceRef: srv1
+          environment:
+            environmentRef: env1
+            deployToAll: false
+            infrastructureDefinitions:
+              - identifier: infra1
           execution:
             steps:
               - step:
-                  name: ap1
-                  identifier: ap1
-                  type: HarnessApproval
-                  timeout: 1d
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
                   spec:
-                    approvalMessage: |-
-                      Please review the following information
-                      and approve the pipeline progression
-                    includePipelineExecutionHistory: true
-                    approvers:
-                      minimumCount: 1
-                      disallowPipelineExecutor: false
-                      userGroups:
-                        - account._account_all_users
-                    isAutoRejectEnabled: false
-                    approverInputs: []
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: exit 0
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+            rollbackSteps: []
         tags: {}
+        failureStrategies:
+          - onFailure:
+              errors:
+                - AllErrors
+              action:
+                type: StageRollback
