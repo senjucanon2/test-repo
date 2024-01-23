@@ -1,0 +1,7 @@
+environment:
+  name: env1_dev
+  identifier: env1_dev
+  accountId: yfIjy4xbRsatTNtZa_kodw
+  orgIdentifier: default
+  projectIdentifier: proj1
+  type: PreProduction
