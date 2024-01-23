@@ -1,0 +1,7 @@
+environment:
+  name: env1
+  identifier: env1
+  accountId: kmpySmUISimoRrJL6NL73w
+  orgIdentifier: default
+  projectIdentifier: proj1
+  type: PreProduction
