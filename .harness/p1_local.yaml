@@ -8,7 +8,7 @@ pipeline:
     - stage:
         name: ap1
         identifier: ap1
-        description: branch-> main/patch
+        description: branch-> feature/API-6945-K8s-upgrade-on-EKS
         type: Approval
         spec:
           execution:
