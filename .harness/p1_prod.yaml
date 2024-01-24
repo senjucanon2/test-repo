@@ -8,7 +8,7 @@ pipeline:
     - stage:
         name: ap1
         identifier: ap1
-        description: ""
+        description: branch-> main/patch
         type: Approval
         spec:
           execution:
