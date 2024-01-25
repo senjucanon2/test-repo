@@ -8,7 +8,7 @@ pipeline:
     - stage:
         name: s1
         identifier: s1
-        description: ""
+        description: "branch -> #123"
         type: Approval
         spec:
           execution:
