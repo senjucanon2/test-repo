@@ -1,0 +1,7 @@
+environment:
+  name: env_vivek
+  identifier: env_vivek
+  accountId: vRvDt5iuS7uwyGSo8S0biA
+  orgIdentifier: default
+  projectIdentifier: Tathagat
+  type: PreProduction
