@@ -1,0 +1,5 @@
+service:
+  name: srv_proj
+  identifier: srv_proj
+  orgIdentifier: default
+  projectIdentifier: proj1
