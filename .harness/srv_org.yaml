@@ -1,4 +1,0 @@
-service:
-  name: srv_org
-  identifier: srv_org
-  orgIdentifier: default
