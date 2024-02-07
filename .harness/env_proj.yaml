@@ -1,7 +1,25 @@
 environment:
   name: env_proj
   identifier: env_proj
-  accountId: kmpySmUISimoRrJL6NL73w
+  description: ""
+  tags: {}
+  type: PreProduction
   orgIdentifier: default
   projectIdentifier: proj1
-  type: PreProduction
+  variables: []
+  overrides:
+    manifests:
+      - manifest:
+          identifier: qwdqwd
+          type: Values
+          spec:
+            store:
+              type: Github
+              spec:
+                connectorRef: account.github_acc_con
+                gitFetchType: Branch
+                paths:
+                  - root
+                repoName: test-repo
+                branch: main
+
