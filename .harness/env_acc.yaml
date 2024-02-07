@@ -1,0 +1,9 @@
+environment:
+  name: env_acc
+  identifier: env_acc
+  accountId: kmpySmUISimoRrJL6NL73w
+  type: PreProduction
+  description: description
+  tags:
+    tag: ""
+    tag2: ""
