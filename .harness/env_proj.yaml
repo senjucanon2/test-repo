@@ -4,8 +4,6 @@ environment:
   description: ""
   tags: {}
   type: PreProduction
-  orgIdentifier: default
-  projectIdentifier: proj1
   variables: []
   overrides:
     manifests:
