@@ -1,6 +1,6 @@
 environment:
-  name: env_proj2
-  identifier: env_proj2
+  name: env_proj
+  identifier: env_proj
   description: ""
   tags: {}
   type: PreProduction
