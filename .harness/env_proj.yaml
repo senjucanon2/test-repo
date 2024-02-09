@@ -1,9 +1,9 @@
 environment:
-  name: env_proj
-  identifier: env_proj
+  name: 
+  identifier: 
   description: ""
   tags: {}
-  type: PreProductiondwfwiehocqwh
+  type: PreProduction
   orgIdentifier: default
   projectIdentifier: proj1
   variables: []
