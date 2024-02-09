@@ -3,7 +3,7 @@ environment:
   identifier: env_proj
   description: ""
   tags: {}
-  type: PreProduction
+  type: PreProductiondwfwiehocqwh
   orgIdentifier: default
   projectIdentifier: proj1
   variables: []
