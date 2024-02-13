@@ -1,6 +1,7 @@
 infrastructureDefinition:
   name: infra1
   identifier: infra1
+  orgIdentifier: default
   environmentRef: env_acc
   deploymentType: Kubernetes
   type: KubernetesDirect
