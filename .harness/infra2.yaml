@@ -1,0 +1,11 @@
+infrastructureDefinition:
+  name: infra2
+  identifier: infra2
+  environmentRef: env_acc
+  deploymentType: Kubernetes
+  type: KubernetesDirect
+  spec:
+    connectorRef: <+input>
+    namespace: <+input>
+    releaseName: release-<+INFRA_KEY_SHORT_ID>
+  allowSimultaneousDeployments: false
