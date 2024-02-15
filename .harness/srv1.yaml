@@ -1,0 +1,3 @@
+service:
+  name: srv1
+  identifier: srv1
