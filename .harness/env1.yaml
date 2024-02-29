@@ -1,9 +1,0 @@
-environment:
-  orgIdentifier: vivek_org
-  projectIdentifier: proj1
-  identifier: env1
-  tags:
-    foo: bar
-    baz: ""
-  name: env1
-  type: PreProduction
