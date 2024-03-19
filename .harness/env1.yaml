@@ -1,7 +1,0 @@
-environment:
-  name: env1
-  identifier: env1
-  accountId: px7xd_BFRCi-pfWPYXVjvw
-  orgIdentifier: default
-  projectIdentifier: vivek_proj1
-  type: PreProduction
