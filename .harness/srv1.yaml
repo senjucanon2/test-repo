@@ -3,3 +3,12 @@ service:
   identifier: srv1
   orgIdentifier: default
   projectIdentifier: proj1
+  serviceDefinition:
+    spec:
+      variables:
+        - name: var1
+          type: String
+          description: ""
+          required: false
+          value: abc
+    type: Kubernetes
