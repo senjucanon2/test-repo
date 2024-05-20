@@ -31,3 +31,4 @@ pipeline:
                     isAutoRejectEnabled: false
                     approverInputs: []
         tags: {}
+  allowStageExecutions: true
