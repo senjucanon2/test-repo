@@ -31,4 +31,27 @@ pipeline:
                     isAutoRejectEnabled: false
                     approverInputs: []
         tags: {}
+    - stage:
+        name: s2
+        identifier: s2
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: exit 0
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
   allowStageExecutions: true
