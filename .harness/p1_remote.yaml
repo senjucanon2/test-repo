@@ -54,4 +54,30 @@ pipeline:
                     outputVariables: []
                   timeout: 10m
         tags: {}
+    - stage:
+        name: s3
+        identifier: s3
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: ap3
+                  identifier: ap3
+                  type: HarnessApproval
+                  timeout: 1d
+                  spec:
+                    approvalMessage: |-
+                      Please review the following information
+                      and approve the pipeline progression
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                      userGroups:
+                        - account._account_all_users
+                    isAutoRejectEnabled: false
+                    approverInputs: []
+        tags: {}
   allowStageExecutions: true
