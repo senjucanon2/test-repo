@@ -1,0 +1,9 @@
+overlayInputSet:
+  name: is-overlay
+  identifier: isoverlay
+  orgIdentifier: default
+  projectIdentifier: proj1
+  pipelineIdentifier: p1
+  inputSetReferences:
+    - is2
+  tags: {}
