@@ -1,4 +1,4 @@
-overlayInputSet:
+inputSet:
   name: is-overlay
   identifier: isoverlay
   orgIdentifier: default
