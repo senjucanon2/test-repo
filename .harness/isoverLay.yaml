@@ -1,9 +1,0 @@
-overlayInputSet:
-  name: is-overLay
-  identifier: isoverLay
-  orgIdentifier: default
-  projectIdentifier: naidusanity
-  pipelineIdentifier: p1_vivek
-  inputSetReferences:
-    - is1
-  tags: {}
