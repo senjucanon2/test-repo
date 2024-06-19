@@ -1,0 +1,21 @@
+inputSet:
+  name: is1
+  identifier: is1
+  orgIdentifier: default
+  projectIdentifier: vivek_proj1
+  pipeline:
+    identifier: p1_remote
+    stages:
+      - stage:
+          identifier: s1
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: ap1
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        userGroups:
+                          - account._account_all_users
