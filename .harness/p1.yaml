@@ -3,7 +3,7 @@ pipeline:
   identifier: p1
   projectIdentifier: proj1
   orgIdentifier: default
-  tags: {}
+  tags: {"tag1"}
   stages:
     - stage:
         name: s1
