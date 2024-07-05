@@ -35,7 +35,7 @@ template:
                 environmentVariables: []
                 outputVariables: []
                 includeInfraSelectors: false
-              timeout: 10m
+              timeout: 11m
         rollbackSteps: []
     failureStrategies:
       - onFailure:
