@@ -11,8 +11,10 @@ template:
     spec:
       deploymentType: Kubernetes
       environment:
-        environmentRef: env1
+        environmentRef: <+input>
         deployToAll: false
+        environmentInputs: <+input>
+        serviceOverrideInputs: <+input>
         infrastructureDefinitions: <+input>
       service:
         serviceRef: <+input>
