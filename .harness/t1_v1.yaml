@@ -7,7 +7,7 @@ template:
   orgIdentifier: default
   tags: {}
   spec:
-    timeout: 12m
+    timeout: 15m
     type: ShellScriptProvision
     spec:
       source:
