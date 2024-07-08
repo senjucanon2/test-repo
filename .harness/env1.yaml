@@ -3,4 +3,4 @@ environment:
   identifier: env1
   orgIdentifier: default
   projectIdentifier: proj1
-  type: PreProduction
+  type: Production
