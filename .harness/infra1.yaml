@@ -9,5 +9,5 @@ infrastructureDefinition:
   spec:
     connectorRef: <+input>
     namespace: <+input>
-    releaseName: release-<+INFRA_KEY_SHORT_ID2>
+    releaseName: release-<+INFRA_KEY_SHORT_ID1>
   allowSimultaneousDeployments: false
