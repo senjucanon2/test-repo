@@ -22,12 +22,18 @@ pipeline:
           execution:
             steps:
               - step:
-                  type: K8sRollingDeploy
-                  name: K8sRollingDeploy_1
-                  identifier: K8sRollingDeploy_1
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
                   spec:
-                    skipDryRun: false
-                    pruningEnabled: false
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo "jjj"
+                    environmentVariables: []
+                    outputVariables: []
                   timeout: 10m
             rollbackSteps:
               - step:
