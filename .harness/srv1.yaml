@@ -13,7 +13,7 @@ service:
               store:
                 type: Github
                 spec:
-                  connectorRef: account.github_con2
+                  connectorRef: <+input>
                   gitFetchType: Branch
                   paths:
                     - manifest.txt
