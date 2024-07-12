@@ -4,20 +4,5 @@ service:
   orgIdentifier: default
   projectIdentifier: proj1
   serviceDefinition:
-    spec:
-      manifests:
-        - manifest:
-            identifier: manifest
-            type: K8sManifest
-            spec:
-              store:
-                type: Github
-                spec:
-                  connectorRef: github_con2
-                  gitFetchType: Branch
-                  paths:
-                    - manifest.txt
-                  branch: main
-              skipResourceVersioning: false
-              enableDeclarativeRollback: false
+    spec: {}
     type: Kubernetes
