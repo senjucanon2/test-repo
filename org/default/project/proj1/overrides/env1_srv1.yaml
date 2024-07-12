@@ -6,7 +6,7 @@ overrides:
         spec:
           store:
             spec:
-              connectorRef: account.github_con2
+              connectorRef: account.github_con
               gitFetchType: Branch
               branch: main
               commitId: null
