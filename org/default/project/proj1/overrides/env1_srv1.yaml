@@ -1,9 +1,4 @@
 overrides:
-  variables:
-    - name: var1
-      type: String
-      value: abc
-      required: false
   manifests:
     - manifest:
         identifier: mn1
