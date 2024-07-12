@@ -1,0 +1,17 @@
+overrides:
+  manifests:
+    - manifest:
+        identifier: mn1
+        type: Values
+        spec:
+          store:
+            spec:
+              connectorRef: account.github_con
+              gitFetchType: Branch
+              branch: main
+              commitId: null
+              paths:
+                - .harness/manifest.txt
+              folderPath: null
+              repoName: null
+            type: Github
