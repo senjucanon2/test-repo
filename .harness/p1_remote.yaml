@@ -8,7 +8,7 @@ pipeline:
     - stage:
         name: s1
         identifier: s1
-        description: "% commit123"
+        description: "% commit1234"
         type: Approval
         spec:
           execution:
