@@ -72,3 +72,10 @@ pipeline:
                 - AllErrors
               action:
                 type: StageRollback
+    - stage:
+        name: s3
+        identifier: s3
+        tags: {}
+        template:
+          templateRef: account.customStage
+          versionLabel: v1
