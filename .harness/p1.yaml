@@ -1,0 +1,42 @@
+pipeline:
+  name: p1
+  identifier: p1
+  projectIdentifier: proj1
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: s1
+        description: ""
+        type: Deployment
+        spec:
+          deploymentType: CustomDeployment
+          customDeploymentRef:
+            templateRef: account.AzureFunctions
+            versionLabel: v1
+          service:
+            serviceRef: <+input>
+            serviceInputs: <+input>
+          execution:
+            steps:
+              - step:
+                  name: Fetch Instances
+                  identifier: fetchInstances
+                  type: FetchInstanceScript
+                  timeout: 10m
+                  spec: {}
+            rollbackSteps: []
+          environment:
+            environmentRef: <+input>
+            deployToAll: false
+            environmentInputs: <+input>
+            serviceOverrideInputs: <+input>
+            infrastructureDefinitions: <+input>
+        tags: {}
+        failureStrategies:
+          - onFailure:
+              errors:
+                - AllErrors
+              action:
+                type: StageRollback
