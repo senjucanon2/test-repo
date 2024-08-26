@@ -8,7 +8,7 @@ pipeline:
     - stage:
         name: s1
         identifier: s1
-        description: "vivekDid"
+        description: "vivekDid2"
         type: Deployment
         spec:
           deploymentType: CustomDeployment
