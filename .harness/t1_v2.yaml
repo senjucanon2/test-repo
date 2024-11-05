@@ -1,0 +1,15 @@
+template:
+  name: t1
+  identifier: t1
+  type: Step
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScriptProvision
+    spec:
+      source:
+        type: Inline
+        spec:
+          script: exit 1
+      environmentVariables: []
+  versionLabel: v2
