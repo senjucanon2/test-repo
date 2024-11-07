@@ -1,0 +1,5 @@
+service:
+  name: srv_remote
+  identifier: srv_remote
+  orgIdentifier: default
+  projectIdentifier: proj1
