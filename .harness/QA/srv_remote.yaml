@@ -3,3 +3,14 @@ service:
   identifier: srv_remote
   orgIdentifier: default
   projectIdentifier: vivek_proj1
+  serviceDefinition:
+    spec:
+      release:
+        name: release-<+INFRA_KEY_SHORT_ID>
+      variables:
+        - name: var1
+          type: String
+          description: ""
+          required: false
+          value: <+input>
+    type: Kubernetes
