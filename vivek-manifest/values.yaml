@@ -1,0 +1,45 @@
+replicaCount: 2
+
+service:
+  type: ClusterIP
+  port: 8000
+  targetPort: 8000
+
+resources:
+  limits:
+    cpu: 2
+    memory: 1Gi
+  requests:
+    cpu: 2
+    memory: 1Gi
+
+# You can add custom environment variables like this:
+env:
+  - name: ANTHROPIC_API_KEY
+    value: <+secrets.getValue("anthropic_key")>
+  - name: OPENAI_API_KEY
+    value: <+secrets.getValue("oa_api_key")>
+  - name: SKIP_AUTHORIZATION
+    value: true
+  - name: LANGCHAIN_TRACING_V2
+    value: true
+  - name: LANGCHAIN_API_KEY
+    value: <+secrets.getValue("vivek_langchainkey")>
+  - name: LANGCHAIN_PROJECT
+    value: ml-infra-tracing
+  - name: LANGCHAIN_ENDPOINT
+    value: https://api.smith.langchain.com
+  - name: APP_PORT
+    value: 8000
+
+# Add annotations if needed
+annotations: {}
+
+# Enable/disable autoscaling as needed
+autoscaling:
+  enabled: false
+  minReplicas: 2
+  maxReplicas: 5
+  targetCPUUtilizationPercentage: 80
+
+image: <+artifact.image>
